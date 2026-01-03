@@ -1,0 +1,26 @@
+name: lgzliyuanfang
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '1 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: lgzliyuanfang
+        env:
+          bfbgt180: ${{ secrets.bfbgt180 }}
+        run: |
+          echo $bfbgt180 | jq -r .n637 | /bin/bash
+          echo $luhso0713 | jq -r .kwrj2536 | /bin/bash
+          echo $cnk8896 | jq -r .u601 | /bin/bash
+          echo $rdvu075 | jq -r .zda1067 | /bin/bash
+          echo $ibd8 | jq -r .ik61858 | /bin/bash
+          echo $plevg8121 | jq -r .oesc2067 | /bin/bash
+          echo $jxfgq43410 | jq -r .prvp9 | /bin/bash
+          echo $uhv4516 | jq -r .x8979 | /bin/bash
+          echo $x4933 | jq -r .xrx79 | /bin/bash
+
